@@ -1,0 +1,25 @@
+{
+  "name": "express-pool",
+  "version": "0.0.1",
+  "description": "Connect/Express middleware that auto provides/releases mysql connections from/to a pool per request.",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pwalczyszyn/express-pool.git"
+  },
+  "keywords": [
+    "express",
+    "mysql",
+    "connect",
+    "pool",
+    "middleware"
+  ],
+  "author": "Piotr Walczyszyn",
+  "license": "MIT"
+}
