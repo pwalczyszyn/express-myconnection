@@ -1,25 +1,26 @@
 {
-  "name": "express-pool",
-  "version": "0.0.2",
-  "description": "Connect/Express middleware that auto provides mysql connections.",
-  "main": "index.js",
-  "directories": {
-    "example": "examples"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/pwalczyszyn/express-pool.git"
-  },
-  "keywords": [
+    "name": "express-myconnection",
+    "version": "1.0.0",
+    "description": "Connect/Express middleware that auto provides mysql connections.",
+    "main": "index.js",
+    "directories": {
+        "example": "examples"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/pwalczyszyn/express-myconnection.git"
+    },
+    "homepage": "http://github.com/pwalczyszyn/express-myconnection",
+    "keywords": [
     "express",
     "mysql",
     "connect",
     "pool",
     "middleware"
-  ],
-  "author": "Piotr Walczyszyn",
-  "license": "MIT"
+    ],
+    "author": "Piotr Walczyszyn",
+    "license": "MIT"
 }
