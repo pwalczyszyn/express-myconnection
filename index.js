@@ -1,1 +1,1 @@
-module.exports = require('./lib/express-pool.js');
+module.exports = require('./lib/express-myconnection.js');
