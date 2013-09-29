@@ -1,7 +1,7 @@
 {
   "name": "express-pool",
   "version": "0.0.1",
-  "description": "Connect/Express middleware that auto provides/releases mysql connections from/to a pool per request.",
+  "description": "Connect/Express middleware that auto provides mysql connections.",
   "main": "index.js",
   "directories": {
     "example": "examples"
