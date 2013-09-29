@@ -1,6 +1,6 @@
 {
   "name": "express-pool",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Connect/Express middleware that auto provides mysql connections.",
   "main": "index.js",
   "directories": {
