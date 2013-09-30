@@ -31,7 +31,6 @@ Configuration is straightforward and you use it as any other middleware. First p
 
     // myrouter.js
     ...
-    
     req.getConnection(function(err, connection) {
       if (err) return next(err);
       
@@ -44,5 +43,4 @@ Configuration is straightforward and you use it as any other middleware. First p
       });
       
     });
-    
     ...
