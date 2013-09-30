@@ -31,16 +31,21 @@ Configuration is straightforward and you use it as any other middleware. First p
 
     // myrouter.js
     ...
-    req.getConnection(function(err, connection) {
-      if (err) return next(err);
-      
-      connection.query('SELECT 1 AS RESULT', [], function(err, results) {
-        if (err) return next(err);
-        
-        results[0].RESULT;
-        // 1
-        
-      });
-      
-    });
+    module.exports = function(req, res, next) {
+        ...
+        req.getConnection(function(err, connection) {
+          if (err) return next(err);
+          
+          connection.query('SELECT 1 AS RESULT', [], function(err, results) {
+            if (err) return next(err);
+            
+            results[0].RESULT;
+            // -> 1
+            
+            res.send(200);
+          });
+          
+        });
+        ...
+    }
     ...
