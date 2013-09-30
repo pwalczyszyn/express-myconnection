@@ -1,7 +1,7 @@
 express-myconnection
 ============
 
-Connect/Express middleware auto provides and auto closes/releases mysql connections. It has three different strategies of managing mysql connections during request/response life cycle.
+Connect/Express middleware provides a consistent API for MySQL connections during request/response life cycle. It supports three different strategies of managing db connections: ` single ` for a singleton connection on an app instance level, `pool` based connections, and a new connection per each `request`. It’s also capable of auto closing/releasing connections if configured either with `pool` or `request`. It uses [node-mysql](https://github.com/felixge/node-mysql) as a MySQL driver.
 
 ### Strategies
 *   `single` - creates single database connection for whole application instance. Connection is never closed. In case of disconnection it will try to reconnect again as described in [node-mysql docs](https://github.com/felixge/node-mysql).
