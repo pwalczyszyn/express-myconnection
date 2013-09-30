@@ -29,7 +29,7 @@ Configuration is straightforward and you use it as any other middleware. First p
     
 **express-myconnection** extends `request` object with `getConection(callback)` function, this way connection instance can be accessed anywhere in routers during request/response life cycle:
 
-    // myrouter.js
+    // myroute.js
     ...
     module.exports = function(req, res, next) {
         ...
