@@ -1,6 +1,6 @@
 {
     "name": "express-myconnection",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Connect/Express middleware that auto provides mysql connections.",
     "main": "index.js",
     "directories": {
