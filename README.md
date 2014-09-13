@@ -24,7 +24,7 @@ Configuration is straightforward and you use it as any other middleware. First p
           database: 'mydb'
         };
       
-    app.use(myConnection(mysql, dbOptions, 'single');
+    app.use(myConnection(mysql, dbOptions, 'single'));
     ...
     
 **express-myconnection** extends `request` object with `getConection(callback)` function, this way connection instance can be accessed anywhere in routers during request/response life cycle:
