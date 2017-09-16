@@ -49,3 +49,31 @@ Configuration is straightforward and you use it as any other middleware. First p
         ...
     }
     ...
+
+**release connection** use req.releaseConnection to manual release a connection
+    // myroute.js
+    ...
+    module.exports = function(req, res, next) {
+      ...
+      req.getConnection(function(err, connection) {
+        if (err) return next(err);
+        connection.query('SELECT 1 AS RESULT', [], function(err, results) {
+          connection = null;
+          req.releaseConnection();    //manual to release a connection
+          if (err) return next(err);
+          results[0].RESULT;
+          // -> 1
+          requestUrl(url, function(err, data) {
+            if (err) return next(err);
+            req.getConnection(function(err, connection) {   //get a connection again
+              connection.query('SELECT 2 AS RESULT', [], function(err, results) {
+                  res.send(200);
+              });
+            });
+          })
+        });
+        
+      });
+      ...
+    }
+    ...
