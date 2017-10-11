@@ -50,7 +50,8 @@ Configuration is straightforward and you use it as any other middleware. First p
     }
     ...
 
-**release connection** use req.releaseConnection to manual release a connection
+**release connection** use req.releaseConnection to manual release a connection:
+
     // myroute.js
     ...
     module.exports = function(req, res, next) {
